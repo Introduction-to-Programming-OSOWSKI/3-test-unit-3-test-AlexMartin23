@@ -14,10 +14,13 @@ def removeLast(w):
 
 
 def sumBetweenOdd(x, y):
-    total = 0
-    for i in range (x + 1, y, 2):
-        total = total + i
-    return total
+    intTotal = 0
+    intcurrent = 0
+    for i in range (x + 1, y):
+        intCurrent = i
+        if intCurrent % 2 == 1:
+            intTotal = intTotal + intCurrent
+    return intTotal 
 
 
 def firstLast(w):
@@ -31,5 +34,5 @@ def firstLast(w):
 
 print(countB("baseball"))
 print(removeLast("alex"))
-print(sumBetweenOdd(4, 13))
+print(sumBetweenOdd(5, 13))
 print(firstLast("alex"))
